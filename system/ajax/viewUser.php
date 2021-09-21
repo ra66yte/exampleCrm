@@ -217,6 +217,7 @@ if (isset($_GET['action']) and $_GET['action'] == 'submit' and $_SERVER['REQUEST
         //  
         $sql = "UPDATE `user` SET `login` = '" . $login . "'," . (!empty($password) ? " `password` = '" . password_hash($password, PASSWORD_DEFAULT) . "'," : "") . " `name` = '" . $fio . "', `avatar` = '" . $image_name . "', `group_id` = '" . $group . "', `phone` = '" . $phone . "', `email` = '" . $email . "', `site` = '" . $site . "', `comment` = '" . $comment . "', `country` = '" . $country . "' WHERE `id_item` = '" . $id. "'";
         if ($db->query($sql)) {
+            $db->query("UPDATE `staff` SET `group_id` = '" . $group . "' WHERE `employee_id` = '" . $id . "' AND `chief_id` = '" . $chief['id'] . "'");
             if (isset($_POST['rights']) and count($_POST['rights']) > 0) {
                 // Предоставляем привилегии
                 $sql = "INSERT INTO `employee_right` (`id`, `client_id`, `employee_id`, `staff_right_id`) VALUES";
@@ -699,7 +700,7 @@ while ($row_office = $employee_offices->fetch_assoc()) {
 $offices = $db->query("SELECT `id_item`, `name` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'");
 while ($office = $offices->fetch_assoc()) {
 ?>
-                            <option value="<?=$office['id_item']?>" <?=(in_array($office['id_item'], $employee_office) ? 'selected' : '')?>><?=protection($office['name'], 'display')?></option>
+                            <option value="<?=$office['id_item']?>" <?=(in_array($office['id'], $employee_office) ? 'selected' : '')?>><?=protection($office['name'], 'display')?></option>
 <?
 }
 ?>

@@ -774,7 +774,7 @@ while ($status = $statuses->fetch_assoc()) {
                                 <img src="/getImage/?color=<?=str_replace('#', '', $status['color'])?>" class="scroll-bar__image" alt="status"> <?=protection($status['name'], 'display')?>
                                 <span>
                                     <label class="toggle">
-                                        <input type="checkbox" name="status-<?=$status['id']?>" class="toggle__input"<?=(($count > 0) ? ' checked' : '')?>>
+                                        <input type="checkbox" name="status-<?=$status['id_item']?>" class="toggle__input"<?=(($count[0] > 0) ? ' checked' : '')?>>
                                         <div class="toggle__control"></div>
                                     </label>
                                 </span>
