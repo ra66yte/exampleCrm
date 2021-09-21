@@ -1,0 +1,97 @@
+RewriteEngine On
+RewriteBase /
+
+#RewriteCond %{HTTP_HOST} !^www\.localhost/$
+#RewriteCond %{HTTP_HOST} ^(.*)\.localhost/$
+#RewriteRule ^(.*)$ users.php?username=%1 [L,P]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^getImage/$ /system/plugins/getImage.php?color=$1 [L,QSA]
+
+RewriteRule ^denied$ /denied.php [L,QSA]
+
+RewriteRule ^order_statuses$ /order_statuses.php [L,QSA]
+RewriteRule ^payment_methods$ /payment_methods.php [L,QSA]
+RewriteRule ^delivery_methods$ /delivery_methods.php [L,QSA]
+
+RewriteRule ^list_for_courier$ /dev.php [L,QSA]
+RewriteRule ^registries$ /dev.php [L,QSA]
+
+RewriteRule ^users$ /users.php [L,QSA]
+RewriteRule ^groups_of_users$ /groups_of_users.php [L,QSA]
+RewriteRule ^clients$ /clients.php [L,QSA]
+RewriteRule ^groups_of_clients$ /groups_of_clients.php [L,QSA]
+RewriteRule ^offices$ /offices.php [L,QSA]
+
+RewriteRule ^product_categories$ /product_categories.php [L,QSA]
+RewriteRule ^products$ /products.php [L,QSA]
+RewriteRule ^manufacturers$ /manufacturers.php [L,QSA]
+RewriteRule ^currency$ /currency.php [L,QSA]
+RewriteRule ^sites$ /sites.php [L,QSA]
+RewriteRule ^attribute_categories$ /attribute_categories.php [L,QSA]
+RewriteRule ^attributes$ /attributes.php [L,QSA]
+RewriteRule ^colors_of_goods$ /colors.php [L,QSA]
+RewriteRule ^countries$ /countries.php [L,QSA]
+
+RewriteRule ^suppliers$ /suppliers.php [L,QSA]
+RewriteRule ^goods_arrival$ /goods_arrival.php [L,QSA]
+RewriteRule ^movement_of_goods$ /movement_of_goods.php [L,QSA]
+RewriteRule ^write_off_of_goods$ /write_off_of_goods.php [L,QSA]
+
+RewriteRule ^plugins$ /plugins.php [L,QSA]
+
+RewriteRule ^statistics$ /dev.php [L,QSA]
+
+RewriteRule ^remote_orders$ /dev.php [L,QSA]
+
+RewriteRule ^set_system$ /set_system.php [L,QSA]
+RewriteRule ^history$ /dev.php [L,QSA]
+RewriteRule ^ban_ip$ /dev.php [L,QSA]
+
+RewriteRule ^answers_and_questions$ /dev.php [L,QSA]
+RewriteRule ^instruction$ /dev.php [L,QSA]
+RewriteRule ^api_documentation$ /dev.php [L,QSA]
+
+# Ajax
+RewriteRule ^ajax_updateStatusesOrderCount$ /system/ajax/updateStatusesOrderCount.php [L,QSA]
+RewriteRule ^ajax_updateClientsCount$ /system/ajax/updateClientsCount.php [L,QSA]
+
+RewriteRule ^ajax_viewOrder$ /system/ajax/viewOrder.php [L,QSA]
+RewriteRule ^ajax_confirmExit$ /system/ajax/confirmExit.php [L,QSA]
+RewriteRule ^ajax_deleteOrders$ /system/ajax/deleteOrders.php [L,QSA]
+
+RewriteRule ^ajax_viewProductCategory$ /system/ajax/viewProductCategory.php [L,QSA]
+RewriteRule ^ajax_deleteCategory$ /system/ajax/deleteProductCategory.php [L,QSA]
+RewriteRule ^ajax_deleteDelivery$ /system/ajax/deleteDelivery.php [L,QSA]
+RewriteRule ^ajax_deleteStatus$ /system/ajax/deleteOrderStatus.php [L,QSA]
+RewriteRule ^ajax_deletePayment$ /system/ajax/deletePayment.php [L,QSA]
+RewriteRule ^ajax_viewOrderStatus$ /system/ajax/viewOrderStatus.php [L,QSA]
+RewriteRule ^ajax_viewPaymentMethod$ /system/ajax/viewPaymentMethod.php [L,QSA]
+RewriteRule ^ajax_viewDeliveryMethod$ /system/ajax/viewDeliveryMethod.php [L,QSA]
+RewriteRule ^ajax_addProduct$ /system/ajax/addProduct.php [L,QSA]
+RewriteRule ^ajax_viewProduct$ /system/ajax/viewProduct.php [L,QSA]
+RewriteRule ^ajax_deleteProduct$ /system/ajax/deleteProduct.php [L,QSA]
+
+RewriteRule ^ajax_viewManufacturer$ /system/ajax/viewManufacturer.php [L,QSA]
+RewriteRule ^ajax_deleteManufacturers$ /system/ajax/deleteManufacturers.php [L,QSA]
+
+RewriteRule ^ajax_viewGroupOfUsers$ /system/ajax/viewGroupOfUsers.php [L,QSA]
+RewriteRule ^ajax_deleteGroupsOfUsers$ /system/ajax/deleteGroupsOfUsers.php [L,QSA]
+
+RewriteRule ^ajax_viewGroupOfClients$ /system/ajax/viewGroupOfClients.php [L,QSA]
+RewriteRule ^ajax_deleteGroupsOfClients$ /system/ajax/deleteGroupsOfClients.php [L,QSA]
+
+RewriteRule ^ajax_viewUser$ /system/ajax/viewUser.php [L,QSA]
+RewriteRule ^ajax_viewClient$ /system/ajax/viewClient.php [L,QSA]
+RewriteRule ^ajax_viewMOG$ /system/ajax/viewMOG.php [L,QSA]
+
+RewriteRule ^ajax_deleteUsers$ /system/ajax/deleteUsers.php [L,QSA]
+RewriteRule ^ajax_deleteClients$ /system/ajax/deleteClients.php [L,QSA]
+
+RewriteRule ^ajax_viewSupplier$ /system/ajax/viewSupplier.php [L,QSA]
+RewriteRule ^ajax_deleteSuppliers$ /system/ajax/deleteSuppliers.php [L,QSA]
+
+RewriteRule ^ajax_changeOrdersStatuses$ /system/ajax/changeOrdersStatuses.php [L,QSA]

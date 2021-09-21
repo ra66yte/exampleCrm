@@ -1,0 +1,350 @@
+2021-05-20 21:35:14 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function send() on int in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:30
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(232): {closure}()
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(281): Workerman\Events\Select->tick()
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Вла in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 30"
+2021-05-20 21:36:41 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function send() on int in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:30
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(232): {closure}()
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(281): Workerman\Events\Select->tick()
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Вла in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 30"
+2021-05-20 21:37:21 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function send() on int in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:30
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(232): {closure}()
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(281): Workerman\Events\Select->tick()
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Вла in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 30"
+2021-05-20 21:40:22 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function send() on int in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:30
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(232): {closure}()
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(281): Workerman\Events\Select->tick()
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Вла in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 30"
+2021-05-21 21:40:56 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(40): Workerman\Connection\TcpConnection->send(Array)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET /system/Ser...')
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /system/Ser...', Object(Workerman\Connection\TcpConnection))
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input('GET /system/Ser...', Object(Workerman\Connection\TcpConnection))
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#10 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(77): Workerman\Worker::runAll()
+#11 {main}
+2021-05-21 21:40:56 pid:1 Worker process terminated
+2021-05-21 21:50:04 pid:1 Worker process terminated with ERROR: E_RECOVERABLE_ERROR "Object of class Workerman\Connection\TcpConnection could not be converted to string in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 59"
+2021-05-22 12:05:46 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(24): Workerman\Connection\TcpConnection->send(Array)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(392): {closure}(Object(Workerman\Connection\TcpConnection), 'GET /system/Ser...')
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(57): Workerman\Protocols\Websocket::dealHandshake('GET /system/Ser...', Object(Workerman\Connection\TcpConnection))
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input('GET /system/Ser...', Object(Workerman\Connection\TcpConnection))
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#9 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#10 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(65): Workerman\Worker::runAll()
+#11 {main}
+2021-05-22 12:05:46 pid:1 Worker process terminated
+2021-05-22 21:28:59 pid:1 Exception: You can't send(array) to client, you need to convert it to a string.  in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode(Array, Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(59): Workerman\Connection\TcpConnection->send(Array)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(75): Workerman\Worker::runAll()
+#9 {main}
+2021-05-22 21:28:59 pid:1 Worker process terminated
+2021-05-22 22:36:41 pid:1 Error: Call to a member function send() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:54
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(75): Workerman\Worker::runAll()
+#7 {main}
+2021-05-22 22:36:41 pid:1 Worker process terminated
+2021-05-22 22:37:21 pid:1 Error: Call to a member function send() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:53
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(74): Workerman\Worker::runAll()
+#7 {main}
+2021-05-22 22:37:21 pid:1 Worker process terminated
+2021-05-25 09:19:10 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:58
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:19:10 pid:1 Worker process terminated
+2021-05-25 09:20:00 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:58
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:20:00 pid:1 Worker process terminated
+2021-05-25 09:21:10 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:58
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:21:10 pid:1 Worker process terminated
+2021-05-25 09:22:46 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:58
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:22:46 pid:1 Worker process terminated
+2021-05-25 09:24:21 pid:1 Error: Unsupported operand types in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:58
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:24:21 pid:1 Worker process terminated
+2021-05-25 09:25:46 pid:1 Error: Cannot use object of type Workerman\Connection\TcpConnection as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:64
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(92): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 09:25:46 pid:1 Worker process terminated
+2021-05-25 10:12:13 pid:1 Error: Cannot use object of type stdClass as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:59
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(94): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 10:12:13 pid:1 Worker process terminated
+2021-05-25 10:24:05 pid:1 Error: Cannot use object of type stdClass as array in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:59
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(95): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 10:24:05 pid:1 Worker process terminated
+2021-05-25 17:19:43 pid:1 Error: Call to a member function send() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:99
+Stack trace:
+#0 [internal function]: {closure}('4')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(99): array_map(Object(Closure), Array)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(931): {closure}(Object(Workerman\Connection\TcpConnection))
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(834): Workerman\Connection\TcpConnection->destroy()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(105): Workerman\Connection\TcpConnection->close('\x88\x02\x03\xE8', true)
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input('\x88\x82\xC0\xBE\xA8\xC7\xC3W', Object(Workerman\Connection\TcpConnection))
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #28)
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#9 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#10 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#11 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(115): Workerman\Worker::runAll()
+#12 {main}
+2021-05-25 17:19:43 pid:1 Worker process terminated
+2021-05-25 17:27:39 pid:1 Worker process terminated
+2021-05-25 17:33:12 pid:1 Worker process terminated
+2021-05-25 17:46:23 pid:1 Worker process terminated
+2021-05-25 17:47:01 pid:1 Worker process terminated
+2021-05-25 17:47:52 pid:1 Worker process terminated
+2021-05-25 17:53:49 pid:1 Error: Call to a member function query() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:83
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(130): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 17:53:49 pid:1 Worker process terminated
+2021-05-25 17:54:43 pid:1 Error: Call to a member function query() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:82
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(129): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 17:54:43 pid:1 Worker process terminated
+2021-05-25 17:55:32 pid:1 Error: Call to a member function query() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:82
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(129): Workerman\Worker::runAll()
+#7 {main}
+2021-05-25 17:55:32 pid:1 Worker process terminated
+2021-05-26 10:29:15 pid:1 Error: Call to undefined function send() in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:140
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(931): {closure}(Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(834): Workerman\Connection\TcpConnection->destroy()
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php(105): Workerman\Connection\TcpConnection->close('\x88\x02\x03\xE8', true)
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(600): Workerman\Protocols\Websocket::input('\x88\x82\xCFA\x9By\xCC\xA8', Object(Workerman\Connection\TcpConnection))
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#9 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(148): Workerman\Worker::runAll()
+#10 {main}
+2021-05-26 10:29:15 pid:1 Worker process terminated
+2021-05-26 11:17:12 pid:1 Worker process terminated with ERROR: E_ERROR "Cannot redeclare dbConnect() (previously declared in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:27) in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php on line 24"
+2021-05-26 11:44:03 pid:1 Error: Call to a member function query() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:90
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(158): Workerman\Worker::runAll()
+#7 {main}
+2021-05-26 11:44:03 pid:1 Worker process terminated
+2021-05-26 11:45:18 pid:1 Error: Call to a member function query() on string in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:92
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #25)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(160): Workerman\Worker::runAll()
+#7 {main}
+2021-05-26 11:45:18 pid:1 Worker process terminated
+2021-05-26 11:45:58 pid:1 Error: Call to a member function query() on string in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:92
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"lock...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #21)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(160): Workerman\Worker::runAll()
+#7 {main}
+2021-05-26 11:45:58 pid:1 Worker process terminated
+2021-05-27 12:48:38 pid:1 Error: Call to undefined function protection() in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:91
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"add ...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #31)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(207): Workerman\Worker::runAll()
+#7 {main}
+2021-05-27 12:48:38 pid:1 Worker process terminated
+2021-05-27 12:49:52 pid:1 Error: Call to undefined function view_time() in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:117
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"add ...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #26)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(222): Workerman\Worker::runAll()
+#7 {main}
+2021-05-27 12:49:52 pid:1 Worker process terminated
+2021-05-30 12:02:58 pid:1 Exception: You can't send(NULL) to client, you need to convert it to a string.  in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Protocols\Websocket.php:236
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(321): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(110): Workerman\Connection\TcpConnection->send(NULL)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"set ...')
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#8 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(246): Workerman\Worker::runAll()
+#9 {main}
+2021-05-30 12:02:58 pid:1 Worker process terminated
+2021-06-08 09:59:11 pid:1 Error: Call to a member function escape_string() on null in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\core\functions.php:9
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(77): protection('admin', 'base')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"ente...')
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#7 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(281): Workerman\Worker::runAll()
+#8 {main}
+2021-06-08 09:59:11 pid:1 Worker process terminated
+2021-06-08 10:01:21 pid:1 Error: Call to undefined method mysqli_result::fetch_assco() in C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php:77
+Stack trace:
+#0 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Connection\TcpConnection.php(637): {closure}(Object(Workerman\Connection\TcpConnection), '{"action":"ente...')
+#1 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Events\Select.php(293): Workerman\Connection\TcpConnection->baseRead(Resource id #22)
+#2 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(2430): Workerman\Events\Select->loop()
+#3 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1417): Workerman\Worker->run()
+#4 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(1360): Workerman\Worker::forkWorkersForWindows()
+#5 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\vendor\workerman\workerman\Worker.php(542): Workerman\Worker::forkWorkers()
+#6 C:\Users\Владислав\Desktop\OSPanel\domains\localhost\system\Server\start.php(281): Workerman\Worker::runAll()
+#7 {main}
+2021-06-08 10:01:21 pid:1 Worker process terminated
