@@ -70,7 +70,10 @@ if (isset($user)) {
                         <div class="user-info-header-box__content">
                             Логин: <b><?php echo $user['login'] ?></b>
                             <br>
-                            Группа: Администратор
+                            <?php
+                            $group = $db->query("SELECT `name` FROM `groups_of_users` WHERE `id_item` = '" . $user['group_id'] . "' AND `client_id` = '" . $chief['id'] . "'")->fetch_row();
+                            ?>
+                            Группа: <?=$group[0]?>
                         </div>
                         <div class="user-info-header-box__bottom">
                             <a href="#"><i class="fa fa-cog"></i> Настройки</a>
