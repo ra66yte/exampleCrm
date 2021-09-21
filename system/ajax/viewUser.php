@@ -696,10 +696,10 @@ $employee_office = array();
 while ($row_office = $employee_offices->fetch_assoc()) {
     $employee_office[] = $row_office['office_id'];
 }
-$offices = $db->query("SELECT `id`, `name` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'");
+$offices = $db->query("SELECT `id_item`, `name` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'");
 while ($office = $offices->fetch_assoc()) {
 ?>
-                            <option value="<?=$office['id']?>" <?=(in_array($office['id'], $employee_office) ? 'selected' : '')?>><?=protection($office['name'], 'display')?></option>
+                            <option value="<?=$office['id_item']?>" <?=(in_array($office['id_item'], $employee_office) ? 'selected' : '')?>><?=protection($office['name'], 'display')?></option>
 <?
 }
 ?>

@@ -585,10 +585,10 @@ while ($country = $countries->fetch_assoc()) {
                         <span>Отдел</span> <i class="fa fa-building"></i> <select id="user-office" name="offices[]" class="chosen-select" multiple="true">
                             <?php echo ($db->query("SELECT `id` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'")->num_rows == 0) ? '<option value="">- Не указано -</option>' : ''; ?>
 <?
-$offices = $db->query("SELECT `id`, `name` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'");
+$offices = $db->query("SELECT `id_item`, `name` FROM `offices` WHERE `client_id` = '" . $chief['id'] . "'");
 while ($office = $offices->fetch_assoc()) {
 ?>
-                            <option value="<?php echo $office['id']; ?>"><?php echo protection($office['name'], 'display'); ?></option>
+                            <option value="<?$office['id_item']?>"><?php echo protection($office['name'], 'display'); ?></option>
 <?
 }
 ?>
